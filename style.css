@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+:root{
+    --black: #000;
+    --rwhite: #FFF;
+    --rblue: #0489C2;
+    --rgold: #BD9233;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.paragraph{
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 300;
+    color: darkslategray;
+    /* glow of rgold */
+}
+.glitch{
+    font-family: 'Rubik Glitch', cursive;
+    font-weight: 300;
+    color: var(--rgold);
+    /* glow of rgold */
+}
+.h1-align{
+    font-size: 6rem;
+}
+.heading{
+    font-family: 'Dela Gothic One', cursive;
+    color: var(--rblue);
+    /* glow of rblue */
+}
+.one-of-two{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.one-of-four{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.one-of-three{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 5rem;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--rwhite);
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    width: 55%;
+    border-radius: 500%;
+    padding: 0;
+    /* add a glow of white behind the image */
+}
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+.team img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.team p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+.register{
+    transition: 0.5s;
+    font-family: 'Dela Gothic One', cursive;
+    color: var(--rgold);}
+.register:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    color: var(--rwhite);
+    background-color: var(--rgold);
+}
