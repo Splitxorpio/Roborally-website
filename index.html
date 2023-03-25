@@ -23,7 +23,7 @@
                     <img class="logo" src="logo.png" alt="" style="box-shadow: 0px 0px 8px 10px #d3d3d38e;">
                 </div>
                 <div class="one-of-two">
-                    <p class="paragraph" style="color: var(--rblue)">Cal Commit <span class="paragraph glitch">Presents..</span></p>
+                    <p class="paragraph" style="color: var(--rblue)"><a style="color: var(--rblue);" href="https://calcommit.org" target="_blank">Cal Commit</a> <span class="paragraph glitch">Presents..</span></p>
                     <h1><span class="glitch h1-align">Robo</span><span class="heading">Rally</span></h1>
                     <h2 class="heading">April 16, <span class="glitch h2-align">2023</span></h2>
                     <br>
@@ -69,7 +69,7 @@
             <div class="container" style="background-color: #FFF;">
                 <h2 class="heading">The Team</h2>
                 <div class="team">
-                    <a href="https://splitxorpio.github.io/portfolio/" target="_blank">
+                    <a href="https://arnavpandey.xyz" target="_blank">
                         <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100">
                             <img src="https://splitxorpio.github.io/portfolio/picture.png" alt="">
                             <p class="heading">Arnav Pandey</p>
@@ -107,6 +107,55 @@
                             alt="">
                         <p class="heading">Srinikesh Kanneluru</p>
                     </div>
+                </div>
+            </div>
+            <br>
+            <div class="container2" style="background-color: #FFF;">
+                <h2 class="heading" style="text-align: center ;">FAQs</h2>
+                <br>
+                <button class="accordion"><h2>Who is allowed to participate?</h2></button>
+                <div class="panel">
+                    <br>
+                    <p>High Schoolers and Middle Schoolers of all grades are allowed to participate!</p>
+                    <br>
+                </div>
+                <button class="accordion"><h2>Is it required to have a team? What if I don't have a team?</h2></button>
+                <div class="panel">
+                    <br>
+                    <p>You can be a brave soul and go completely solo! But we recommend a team since we believe that collaboration is the key to
+                        success! We will have a team formation session at the beginning of the event, so you can form a team there.
+                    </p>
+                    <br>
+                </div>
+                <button class="accordion"><h2>When and Where is RoboRally Happening?</h2></button>
+                <div class="panel">
+                    <br>
+                    <p>RoboRally is going to be held at Circuit Launch in Oakland on April 16th from 9am to 9pm.</p>
+                    <br>
+                </div>
+                <button class="accordion">
+                    <h2>Will Food and Snacks be Provided?</h2>
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>Yes! We plan to have food and snacks, a menu will be sent out once we have gathered important information like allergies.</p>
+                    <br>
+                </div>
+                <button class="accordion">
+                    <h2>How Much Does RoboRally Cost?</h2>
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>This event is completely free for our participants! Donations are always welcome though!</p>
+                    <br>
+                </div>
+                <button class="accordion">
+                    <h2>I Have More Questions...</h2>
+                </button>
+                <div class="panel">
+                    <br>
+                    <p>No problem! You can email us at <a href="mailto:arnavp@calcommit.org" target="_blank">arnavp@calcommit.org</a> or <a href="mailto:rohanr@calcommit.org" target="_blank">rohanr@calcommit.org</a></p>
+                    <br>
                 </div>
             </div>
         </div>
@@ -151,6 +200,22 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
         AOS.init();
+        </script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
         </script>
     </body>
 </html>
